@@ -15,7 +15,7 @@ def strip_html_whitespace(string):
         return string
 
 
-def login(driver):
+def login(driver, username, password):
     driver.set_window_size(500, 800)
 
     driver.get('https://quizlet.com')
@@ -121,7 +121,7 @@ if __name__ == '__main__':
     password = getpass.getpass('Password: ')
 
     with webdriver.Chrome() as driver:
-        login(driver)
+        login(driver, username, password)
         play(driver, sys.argv[1])
 
         time.sleep(10000)
