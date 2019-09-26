@@ -26,5 +26,6 @@ python3 main.py
 
 ## Remarks
 - After many trials, I found that the fastest score the server accepts is 0.5 seconds.
-- I initially wanted to keep the code not opensourced. But after 22 seconds of thought, I think a bunch of other people will want to use this.
-- If you read the source javascript code of Quizlet Matches, if it discovers that you cheat, it will label you as a `time_changing_scatter_cheater`.
+- I initially wanted to keep the code not opensourced. But after 22 seconds of thought, I thought a bunch of other people will also want to use this.
+- In the JavaScript source code of Quizlet matches, you can see that if Quizlet discovers that you're cheating, it will designate you as a `time_changing_scatter_cheater`.
+- Feel free to use or change this code, as long as you comply with the license.
