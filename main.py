@@ -8,15 +8,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-if len(sys.argv) <= 1:
-    print('Usage: python3 main.py <setnumber>\n\nRead `README.md` for more.')
-    sys.exit(2)
-
-
-username = input('Username: ')
-password = getpass.getpass('Password: ')
-
-
 def strip_html_whitespace(string):
     if isinstance(string, str):
         return '\n'.join(line.strip() for line in string.split('\n'))
@@ -117,6 +108,18 @@ def play(driver, set_number, desired_time='0.5'):
 
 
 if __name__ == '__main__':
+    if len(sys.argv) > 2:
+        print('Usage: python3 main.py [<setnumber>]\n\n'
+              'Read `README.md` for more.')
+        sys.exit(2)
+    elif len(sys.argv) == 0:
+        set_number = input('Quizlet set number: ')
+    else:
+        set_number = sys.argv[1]
+
+    username = input('Username: ')
+    password = getpass.getpass('Password: ')
+
     with webdriver.Chrome() as driver:
         login(driver)
         play(driver, sys.argv[1])
