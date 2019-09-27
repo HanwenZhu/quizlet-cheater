@@ -1,5 +1,7 @@
 # Quizlet Match Cheater
-Use this to ~~beat your friends in Quizlet Match games~~ lEaRn HoW tO dO pRoGrAmMiNg.
+Use this to ~~beat your friends in Quizlet match games~~ lEaRn HoW tO dO pRoGrAmMiNg.
+
+It can reach a speed of 0.5s for Quizlet matches (it could be 0.0s, but the fastest score the server accepts is 0.5s).
 
 ## Warning
 This software is made and should **only** be used **for educational purposes**. Users should be responsible for using this software.
