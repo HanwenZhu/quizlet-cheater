@@ -122,6 +122,6 @@ if __name__ == '__main__':
 
     with webdriver.Chrome() as driver:
         login(driver, username, password)
-        play(driver, sys.argv[1])
+        play(driver, set_number)
 
         time.sleep(10000)
