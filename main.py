@@ -112,7 +112,7 @@ if __name__ == '__main__':
         print('Usage: python3 main.py [<setnumber>]\n\n'
               'Read `README.md` for more.')
         sys.exit(2)
-    elif len(sys.argv) == 0:
+    elif len(sys.argv) == 1:
         set_number = input('Quizlet set number: ')
     else:
         set_number = sys.argv[1]
